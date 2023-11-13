@@ -10,11 +10,12 @@
   --article-title-color: #000028;
   --bg-color: #000028;
   --title-color: #DB00FF;
-  background-image: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .theme_dark .header__decorations-item {
   visibility: visible;
+  background-image: url(../images/cover-image-dark.png);
 }
 
 .theme_dark .decorated-zone,
