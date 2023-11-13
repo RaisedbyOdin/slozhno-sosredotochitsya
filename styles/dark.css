@@ -5,8 +5,27 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --decorative-color: #FF0070;
+  --text-color: #F1B2CE;
+  --article-title-color: #000028;
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__decorations-item {
+  visibility: visible;
+}
+
+.theme_dark .decorated-zone,
+.theme_dark .section__title {
+  color: var(--decorative-color);
+}
+
+.theme_dark .title__decorations {
+  color: var(--article-title-color);
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
 }
