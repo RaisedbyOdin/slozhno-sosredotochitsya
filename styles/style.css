@@ -222,6 +222,10 @@
 
 @media (width < 768px) {
   
+  .pictures {
+    gap: 10px;
+  }
+
   .pictures__grid {
     display: flex;
     flex-flow: column wrap;
