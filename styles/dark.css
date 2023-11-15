@@ -4,26 +4,12 @@
   переключая тему
 */
 
-.page.theme_dark {
-  --decorative-color: #FF0070;
-  --text-color: #F1B2CE;
-  --article-title-color: #000028;
-  --bg-color: #000028;
-  --title-color: #DB00FF;
-  --bg-image: url(../images/cover-image-dark.png);
-}
-
-.theme_dark .header__decorations-item {
-  visibility: visible;
-  background-image: url(../images/cover-image-dark.png);
-}
-
 .theme_dark .decorated-zone,
-.theme_dark .section__title {
+.theme_dark .content__section-tit {
   color: var(--decorative-color);
 }
 
-.theme_dark .title__decorations {
+.theme_dark .content__section-title-decorations {
   color: var(--article-title-color);
 }
 

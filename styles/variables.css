@@ -1,5 +1,5 @@
 :root {
-  --page-padding: 10px;
+  --page-padding: 0 20px;
   --main-font-family: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --decorative-color: #FF0070;
