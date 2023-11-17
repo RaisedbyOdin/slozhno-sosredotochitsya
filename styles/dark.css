@@ -3,16 +3,19 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-.theme_dark .decorated-zone,
-.theme_dark .content__section-tit {
-  color: var(--decorative-color);
+.page.theme_dark {
+  --decorative-color: #FF0070;
+  --button-color: #FF0070;
+  --rec-color: #FF0070;
+  --outline-color: rgba(255, 0, 112, 0.40);
+  --text-color: #F1B2CE;
+  --article-title-color: #000028;
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --title-shadow: #FF0070;
+  background-image: var(--bg-image);
 }
 
-.theme_dark .content__section-title-decorations {
-  color: var(--article-title-color);
-}
-
-.theme_dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
+.theme_dark .header__theme-menu-button:focus {
+  outline: none;
 }

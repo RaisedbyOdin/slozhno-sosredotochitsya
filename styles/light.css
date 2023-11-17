@@ -3,56 +3,14 @@
   --title-color: #FFC2E6;
   --text-color: #353430;
   --decorative-color: #FF8DCB;
+  --button-color: #353430;
+  --rec-color: #353430;
+  --outline-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme_light .header__decorations-item {
   visibility: hidden;
-}
-
-.theme_light .decorated-zone,
-.theme_light .content__section-title-decorations,
-.theme_light .content__section-tit {
-  color: var(--text-color);
-}
-
-.theme_light .decorated-zone::before {
-  border-inline-end: 1px solid #353430;
-  border-block-start: 1px solid #353430;
-}
-
-.theme_light .decorated-zone::after {
-  border-inline-start: 1px solid #353430;
-  border-block-end: 1px solid #353430;
-}
-
-.theme_light .header__theme-menu-button {
-  color: #353430;
-} 
-
-.theme_light .header__theme-menu-button_active {
-  border: 1px solid #353430;
-}
-
-.header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid #353430;
-}
-
-.theme_light .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.40);
-}
-
-@media (orientation: landscape) {
-  .theme_light .main__title,
-  .theme_light .footer .word-decorations {
-    --decorative-color: #FF0070;
-  }
-}
-
-@media (width < 1024px) {
-  .theme_light .header__title-two {
-    text-shadow: 4px 4px 0px #FF8DCB;
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -61,27 +19,22 @@
     --title-color: #FFC2E6;
     --text-color: #353430;
     --decorative-color: #FF8DCB;
-    background-image: url(../images/cover-image-light.png);
-  }
-  
-  .header__dark-decore {
-    visibility: hidden;
-  }
-  
-  .decorated-zone,
-  .title-decorations,
-  .content__section-tit {
-    color: var(--text-color);
+    --button-color: #353430;
+    --rec-color: #353430;
+    --outline-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
   }
 
-  .header__theme-menu-button:hover {
-    border: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+@media (width < 1024px) {
+  .theme_light .main__title-header {
+    text-shadow: 2px 2px 0px #FF0070;
   }
 }
 
-@media (prefers-color-scheme: light) and (orientation: landscape) {
-  .main__title,
-  .footer .text-decorations {
-    --decorative-color: #FF0070;
+@media (width >= 1024px) {
+  .theme_light .main__title-header {
+    text-shadow: 4px 4px 0px #FF0070;
   }
 }
