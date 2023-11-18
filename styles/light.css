@@ -7,6 +7,7 @@
   --rec-color: #353430;
   --outline-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
+  --title-shadow: #FF8DCB;
 }
 
 .theme_light .header__decorations-item {
@@ -28,13 +29,7 @@
 }
 
 @media (width < 1024px) {
-  .theme_light .main__title-header {
-    text-shadow: 2px 2px 0px #FF0070;
-  }
-}
-
-@media (width >= 1024px) {
-  .theme_light .main__title-header {
-    text-shadow: 4px 4px 0px #FF0070;
+ .theme_light .main__title {
+    --title-shadow:#FF0070;
   }
 }
